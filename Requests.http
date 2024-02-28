@@ -1,0 +1,49 @@
+// https://stackoverflow.com/questions/71553682/in-vs-code-rest-client-plugin-how-do-you-store-variables-from-data-retrieved-f
+
+@localhost=http://localhost:8081
+@token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYW1lMiIsImlhdCI6MTcwOTEyNzczNiwiZXhwIjoxNzA5MTI5NTM2fQ.RL8EdXlJhlFHVtqjVwepqnmKc0xggUae7pA9kbi8hsA
+
+
+### add new user
+
+POST http://localhost:8081/auth/addNewUser
+content-type: application/json
+
+{
+    "name":"name2",
+    "email":"email2@gmail.com",
+    "password":"password"
+}
+
+
+
+### test
+# @name addNewUser
+
+POST {{localhost}}/auth/addNewUser
+content-type: application/json
+
+{
+    "name":"name2",
+    "email":"email2@gmail.com",
+    "password":"password"
+}
+
+### generateToken
+# @name generateToken
+
+POST {{localhost}}/auth/generateToken
+content-type: application/json
+
+{
+    "username":"name2",
+    "password":"password"
+}
+
+// eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYW1lMiIsImlhdCI6MTcwOTEyNjcyNiwiZXhwIjoxNzA5MTI4NTI2fQ.yx8-1xk0l5P6PnIusUyqpULLJAyORd49dNcSa9-1Adc
+
+### userProfile
+# @name getUserProfile
+
+GET {{localhost}}/auth/user/userProfile
+Authorization:  Bearer {{token}}
