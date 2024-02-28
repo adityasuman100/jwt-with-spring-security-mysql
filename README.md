@@ -39,3 +39,19 @@ services:
 # docker-compose up - on windows
 # docker compose up - on linux
 ```
+
+```sh
+echo "# jwt-with-spring-security-mysql" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/adityasuman100/jwt-with-spring-security-mysql.git
+git push -u origin main
+```
+
+```sh
+git remote add origin https://github.com/adityasuman100/jwt-with-spring-security-mysql.git
+git branch -M main
+git push -u origin main
+```
