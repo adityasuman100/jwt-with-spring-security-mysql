@@ -1,0 +1,5 @@
+POST http://localhost:8081/auth/addNewUsere
+
+###
+
+GET http://localhost:8081
